@@ -1,0 +1,12 @@
+package com.tiheima;
+
+public class App {
+    public static void main(String[] args) {
+        new MainFrame();
+        //展示历史胜利所用最少步数：
+        //1.在游戏界面上展示：历史胜利最少步数：
+        //2.创建一个文件记录历史最少步数：score.txt
+        //3.每次胜利后都要比较当前步数和历史最少步数，如果当前步数小于历史最小步数，则更新历史最小步数
+        //4.每次游戏启动时，都要显示历史最小步数。
+    }
+}
