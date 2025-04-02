@@ -13,6 +13,10 @@ public class Test {
         goldCard.deposit(100);
         YinCard yinCard = new YinCard("987654","李四","1399999998",6000);
         pay2(goldCard);
+
+
+
+
         pay2(yinCard);
 
     }
