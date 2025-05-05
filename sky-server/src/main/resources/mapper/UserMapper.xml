@@ -11,4 +11,16 @@
     <select id="getById" resultType="com.sky.entity.User">
         select * from user where id=#{id}
     </select>
+
+    <select id="countByMap" resultType="java.lang.Integer">
+        select count(id) from user
+        <where>
+            <if test="beginTime !=null">
+                and create_time &gt;={beginTime}
+            </if>
+            <if test="endTime != null">
+                and create_time &lt;={endTime}
+            </if>
+        </where>
+    </select>
 </mapper>
